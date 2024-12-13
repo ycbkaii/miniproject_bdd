@@ -10,7 +10,7 @@
 - Metascore
 - Le titre (Title)
 - le réalisateur (Director)
-- Scenaristes (Writers)
+- Scenaristes (Writer)
 - Date de sortie (Release Date)
 - Pays d'origine (Country Of Origin )
 - Budget (Budget)
@@ -31,7 +31,10 @@
 - Scénariste : La liste (entre parenthèse) des personnes crédité au scénario pour le films
 
 
+
 ## Visualisation
+- On met en place un BAR Chart pour visualiser les données, le nombre des films des réalisateurs qui ont un average rating sur un de leurs films > 9 
+- 
 
 ## Mise en place d'un décisionnel
 
