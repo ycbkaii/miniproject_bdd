@@ -1,20 +1,23 @@
 # Mini Projet BDD
 
+## Introduction
+Ce projet a pour objectif d'explorer les données cinématographiques issues de l'IMDb afin d'analyser les relations entre les budgets de production et les notes des films. Nous examinons également la distribution des films et des réalisateurs qui ont produit des œuvres très bien notées. le but est d'essayer de trouver une utilité métier pour conseiller des producteurs sur le choix du réalisateur
+
 
 ## DataSet utilisé
 **IMDB_Movies_Dataset** via <a href='https://kaggle.com'>Kaggle.com</a>
 
 ## Choix des données 
 
-- La note IMDb moyenne (Average Rating)
-- Metascore
-- Le titre (Title)
-- le réalisateur (Director)
-- Scenaristes (Writer)
-- Date de sortie (Release Date)
-- Pays d'origine (Country Of Origin )
-- Budget (Budget)
-- La durée du film (runtime)
+- Average Rating : La note moyenne sur IMDb
+- Metascore : Le score critique provenant de Metacritic
+- Title : Le titre du film
+- Director : Les réalisateurs
+- Writer : Les scénaristes
+- Release Date : La date de sortie
+- Country Of Origin : Le pays d'origine
+- Budget : Le budget de production
+- Runtime : La durée du film
 
 **Source** : Internet Movie DataBase (IMDb)
 
@@ -33,8 +36,16 @@
 
 
 ## Visualisation
-- On met en place un BAR Chart pour visualiser les données, le nombre des films des réalisateurs qui ont un average rating sur un de leurs films > 9 
-- 
+- On met en place un BAR Chart pour visualiser les données, on affiche le nombre des films des réalisateurs qui ont eu au moins un average rating sur un de leurs films > 9 
+<img src='image/README/image.png'>
+
+- Une relation entre les budgets et les réalisateurs
+Un Bar Chart montre la somme des budgets des films pour chaque réalisateur ayant au moins un film bien noté (Average Rating ≥ 9). Les budgets ont été convertis en dollars pour permettre une analyse cohérente
+<img>
+
+
+## Problématique
+Est ce que le budget possède une influence sur la note d'un film en fonction du réalisateur ?
 
 ## Mise en place d'un décisionnel
 

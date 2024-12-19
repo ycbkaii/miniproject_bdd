@@ -28,8 +28,8 @@ plt.figure(figsize=(8, 8))
 bar  = plt.bar(labels,sizes,width=0.5)
 
 plt.title('Répartition des réalisateur')
-plt.xlabel("Catégories")
-plt.ylabel("Valeurs")
+plt.xlabel("Réalisateurs")
+plt.ylabel("Nombre des films des réalisateurs")
 # plt.show()
 
 #endregion
@@ -124,13 +124,13 @@ for elem in directorsSelected :
 plt.figure(figsize=(8, 8))
 plt.bar(labelsDirector,sizesDirector)
 plt.title('Répartition des réalisateur')
-plt.xlabel("Catégories")
-plt.ylabel("Valeurs")
+plt.xlabel("Réalisateurs")
+plt.ylabel("Le budget total du réalisateur en milliards dollars")
 plt.show()
 
 #endregion
 
 #region DECISIONNEL
 
-sommeBudgetTrier = sommeBudget.sort_values(by="Budget", ascending=False).loc[sommeBudget["Director"] == "Christopher Nolan"])
+sommeBudgetTrier = sommeBudget.sort_values(by="Budget", ascending=False)
 print(sommeBudgetTrier)
