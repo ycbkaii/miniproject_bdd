@@ -5,7 +5,7 @@ Ce projet a pour objectif d'explorer les données cinématographiques issues de 
 
 
 ## DataSet utilisé
-**IMDB_Movies_Dataset** via <a href='https://kaggle.com'>Kaggle.com</a>
+**IMDB_Movies_Dataset** via [Kaggle.com](https://kaggle.com)
 
 ## Choix des données 
 
@@ -33,7 +33,11 @@ Ce projet a pour objectif d'explorer les données cinématographiques issues de 
 
 - Scénariste : La liste (entre parenthèse) des personnes crédité au scénario pour le films
 
-
+**Quelles données gardons nous pour l'analyse ?**
+- Average_rating
+- Director
+- Budget
+Le but sera d'analyser les relations entre les budgets de production et les notes des films en fonction des réalisateurs
 
 ## Visualisation
 - On met en place un BAR Chart pour visualiser les données, on affiche le nombre des films des réalisateurs qui ont eu au moins un average rating sur un de leurs films > 9 
@@ -41,12 +45,20 @@ Ce projet a pour objectif d'explorer les données cinématographiques issues de 
 
 - Une relation entre les budgets et les réalisateurs
 Un Bar Chart montre la somme des budgets des films pour chaque réalisateur ayant au moins un film bien noté (Average Rating ≥ 9). Les budgets ont été convertis en dollars pour permettre une analyse cohérente
-<img>
+<img src='image/README/image copy.png'>
 
 
 ## Problématique
 Est ce que le budget possède une influence sur la note d'un film en fonction du réalisateur ?
 
 ## Mise en place d'un décisionnel
+
+### Mise en place d'une regression linéaire Générale sur tous les réalisateurs
+
+### Mise en place d'une regression linéaire ciblés sur ceux qui
+
+
+
+
 
 
