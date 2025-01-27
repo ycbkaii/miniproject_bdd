@@ -1,64 +1,84 @@
-# Mini Projet BDD
+# Analyse des Films IMDB : Visualisations et Régressions
 
-## Introduction
-Ce projet a pour objectif d'explorer les données cinématographiques issues de l'IMDb afin d'analyser les relations entre les budgets de production et les notes des films. Nous examinons également la distribution des films et des réalisateurs qui ont produit des œuvres très bien notées. le but est d'essayer de trouver une utilité métier pour conseiller des producteurs sur le choix du réalisateur
+## Description
 
+Ce projet Python vise à analyser un dataset contenant des informations sur les films IMDB. Il utilise des outils comme Pandas et Matplotlib pour effectuer des visualisations de données et des régressions linéaires. Les principales étapes incluent la création de graphiques, la conversion des budgets en dollars, et l'analyse de la relation entre le budget et la note moyenne des films.
 
-## DataSet utilisé
-**IMDB_Movies_Dataset** via [Kaggle.com](https://kaggle.com)
+---
 
-## Choix des données 
+## Prérequis
 
-- Average Rating : La note moyenne sur IMDb
-- Metascore : Le score critique provenant de Metacritic
-- Title : Le titre du film
-- Director : Les réalisateurs
-- Writer : Les scénaristes
-- Release Date : La date de sortie
-- Country Of Origin : Le pays d'origine
-- Budget : Le budget de production
-- Runtime : La durée du film
+Avant de commencer, assurez-vous que votre environnement dispose des bibliothèques suivantes :
 
-**Source** : Internet Movie DataBase (IMDb)
+- `pandas`
+- `matplotlib`
+- `numpy`
+- `re`
 
-**Caractéristiques** : 
+Pour les installer, exécutez :
+```bash
+pip install pandas matplotlib numpy
+```
 
-- La note moyennes : c'est la moyenne des notes données par les utilisateurs d'IMDb au film, c'est un indicateur de la popularité critique de l'oeuvre
+---
 
-- Metascore : Le metascore issue du site metacritic
+## Fonctionnalités
 
-- Le titre : le titre anglais du film
-
-- Le réalisateur : Le nom et prénom du réalisteur du film, si plusieur réalisateurs (ex : Matrix), les données sont entre parenthèses
-
-- Scénariste : La liste (entre parenthèse) des personnes crédité au scénario pour le films
-
-**Quelles données gardons nous pour l'analyse ?**
-- Average_rating
-- Director
-- Budget
-Le but sera d'analyser les relations entre les budgets de production et les notes des films en fonction des réalisateurs
-
-## Visualisation
-- On met en place un BAR Chart pour visualiser les données, on affiche le nombre des films des réalisateurs qui ont eu au moins un average rating sur un de leurs films > 9 
-<img src='image/README/image.png'>
-
-- Une relation entre les budgets et les réalisateurs
-Un Bar Chart montre la somme des budgets des films pour chaque réalisateur ayant au moins un film bien noté (Average Rating ≥ 9). Les budgets ont été convertis en dollars pour permettre une analyse cohérente
-<img src='image/README/image copy.png'>
+### 1. Visualisation des réalisateurs et de leurs films
 
 
-## Problématique
-Est ce que le budget possède une influence sur la note d'un film en fonction du réalisateur ?
-
-## Mise en place d'un décisionnel
-
-### Mise en place d'une regression linéaire Générale sur tous les réalisateurs
-
-### Mise en place d'une regression linéaire ciblés sur ceux qui
+### 2. Analyse des budgets
 
 
+### 3. Régression linéaire
 
 
+---
 
+## Comment exécuter le projet
 
+1. **Préparer les données :**
+   - Téléchargez le fichier `IMDB_Movies_Dataset.csv` et placez-le dans le même répertoire que le script.
+
+2. **Lancer le script :**
+   - Exécutez le script avec Python :
+     ```bash
+     python analyse.py
+     ```
+ON a donc l'affichage des observations
+
+---
+
+## Organisation du code
+
+### Importation des données
+- Lecture des données depuis le fichier CSV.
+- Sélection des colonnes pertinentes : Titre, Réalisateur, Date de sortie, Budget, Note moyenne, etc.
+
+### Visualisation des réalisateurs
+- Diagramme en barres pour le nombre de films par réalisateur avec une note >= 9.
+
+### Conversion des budgets
+- Une fonction `convertNumber` convertit les budgets en dollars en fonction des devises présentes dans les données.
+
+### Analyse des budgets
+- Visualisation des budgets totaux des réalisateurs sélectionnés.
+
+### Régression linéaire
+- Implémentation d'une régression linéaire simple pour analyser la relation entre budget et note moyenne.
+- Régressions spécifiques par réalisateur.
+
+---
+
+## Résultats attendus
+
+- **Diagrammes en barres** : Nombre de films et budgets par réalisateur.
+- **Graphiques de régression linéaire** : Relation entre budget et note moyenne.
+- **Coefficients de régression** : Calculés et affichés dans la console.
+
+---
+
+## Améliorations possibles
+
+- Ajouter des analyses pour d'autres métriques (ex. : durée des films, origine des pays).
+- Intégrer un tableau interactif pour filtrer les réalisateurs ou films.

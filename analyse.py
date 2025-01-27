@@ -27,9 +27,9 @@ for j in range(len(labels)) :
 plt.figure(figsize=(8, 8))
 bar  = plt.bar(labels,sizes,width=0.5)
 
-plt.title('Répartition des réalisateur')
+plt.title('Répartition des réalisateurs')
 plt.xlabel("Réalisateurs")
-plt.ylabel("Nombre des films des réalisateurs")
+plt.ylabel("Nombre de films des réalisateurs")
 # plt.show()
 
 #endregion
@@ -130,7 +130,7 @@ for elem in directorsSelected :
 # Création du diagramme en secteurs
 plt.figure(figsize=(8, 8))
 plt.bar(labelsDirector,sizesDirector)
-plt.title('Répartition des réalisateur')
+plt.title('Répartition des réalisateurs')
 plt.xlabel("Réalisateurs")
 plt.ylabel("Le budget total du réalisateur en milliards dollars")
 plt.show()
@@ -177,8 +177,8 @@ y_pred = beta_0 + beta_1 * x
 # Affichage des résultats
 plt.scatter(x, y, color='blue', label='Données réelles')
 plt.plot(x, y_pred, color='red', label='Régression linéaire')
-plt.xlabel('x')
-plt.ylabel('y')
+plt.xlabel('Budget en centaine de millions de dollars d\'un film')
+plt.ylabel('Note moyenne d\'un film')
 plt.legend()
 plt.title('Régression Linéaire Simple')
 plt.show()
@@ -217,8 +217,8 @@ for real in labelsDirector :
         # Affichage des résultats
         plt.scatter(x, y, color='blue', label='Données réelles')
         plt.plot(x, y_pred, color='red', label='Régression linéaire')
-        plt.xlabel('x')
-        plt.ylabel('y')
+        plt.xlabel('Budget en centaine de millions de dollars d\'un film')
+        plt.ylabel('Note moyenne IMDB d\'un film')
         plt.legend()
         plt.title('Régression Linéaire Simple ' + str(real))
         plt.show()
