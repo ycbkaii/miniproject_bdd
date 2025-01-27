@@ -2,7 +2,7 @@
 
 ## Description
 
-Ce projet Python vise à analyser un dataset contenant des informations sur les films IMDB. Il utilise des outils comme Pandas et Matplotlib pour effectuer des visualisations de données et des régressions linéaires. Les principales étapes incluent la création de graphiques, la conversion des budgets en dollars, et l'analyse de la relation entre le budget et la note moyenne des films.
+Ce projet Python vise à analyser un dataset contenant des informations sur les films IMDB via KAGGLE avec IMDB https://www.kaggle.com/datasets/hetbabariya/imdb-movies-data-collection-5000-records. Il utilise des outils comme Pandas et Matplotlib pour effectuer des visualisations de données et des régressions linéaires. Les principales étapes incluent la création de graphiques, la conversion des budgets en dollars, et l'analyse de la relation entre le budget et la note moyenne des films.
 
 ---
 
